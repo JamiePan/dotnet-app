@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jamie-net-app
+  labels:
+    app: jamie-net-app
+spec:
+  containers:
+  - image: kcdregistry.azurecr.io/samplechinakcddemo-image:v4
+    name: dotnetwep
+    ports: 
+      - containerPort: 80
+
+      
